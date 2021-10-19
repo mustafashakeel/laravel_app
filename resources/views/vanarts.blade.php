@@ -12,5 +12,14 @@
    <h2>Student Id is {{$id}}</h2>
    <h2>Student City is {{$city}}</h2>
 
+   <ul>
+       @if(count($students))
+            @foreach ($students as $student)
+            <li> {{$student}}</li>
+
+            @endforeach
+       @endif
+   </ul>
+
 </body>
 </html>

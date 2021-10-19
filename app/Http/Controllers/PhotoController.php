@@ -20,8 +20,11 @@ class PhotoController extends Controller
         return view('contact')->with('id', $id);
     }
     public function vanarts($id, $name, $city)
+
     {
-        return view('vanarts', compact('id', 'name', 'city'));
+
+        $students = ['Risako', 'Anton', 'Nikki', 'Charlene', 'Olivia', 'Maeva', 'Damel'];
+        return view('vanarts', compact('students', 'id', 'name', 'city'));
     }
 
     /**
