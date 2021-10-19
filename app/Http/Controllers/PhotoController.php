@@ -19,6 +19,10 @@ class PhotoController extends Controller
     {
         return view('contact')->with('id', $id);
     }
+    public function vanarts($id, $name, $city)
+    {
+        return view('vanarts', compact('id', 'name', 'city'));
+    }
 
     /**
      * Show the form for creating a new resource.

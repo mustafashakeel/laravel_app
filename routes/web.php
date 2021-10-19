@@ -55,3 +55,5 @@ Route::resource('photos', PhotoController::class);
 Route::get('/post/{id}', [PostsController::class, 'index']);
 
 Route::get('/contacts/{id}', [PhotoController::class, 'contact']);
+
+Route::get('/vanarts/{id}/{student}/{city}', [PhotoController::class, 'vanarts']);
